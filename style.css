@@ -1,0 +1,71 @@
+@import url('https://fonts.googleapis.com/css2?family=Montserrat:ital,wght@0,100;0,200;0,300;0,400;0,500;1,100;1,200;1,300;1,400;1,500&family=Pacifico&display=swap');
+* {
+  padding: 0;
+  margin: 0;
+}
+body {
+  font-family: 'montserrat', sans-serif;
+}
+/* Navbar */
+nav {
+  display: flex;
+  background-color: violet;
+  justify-content: space-around;
+  /* padding: 20px 0; */
+  height: 60px;
+  color: rgb(243, 229, 255);
+  align-items: center;
+}
+nav .logo {
+  font-family: 'pacifico';
+  letter-spacing: 3px;
+}
+nav ul {
+  display: flex;
+  list-style: none;
+  /* border: solid; */
+  width: 40%;
+  justify-content: space-between;
+}
+nav ul li a {
+  color: rgb(243, 229, 255);
+  text-decoration: none;
+  font-size: 0.8em;
+}
+nav ul li a:hover {
+  color: rgb(255, 255, 255);
+}
+
+/* Hamburger menu */
+.toggle {
+  display: none;
+  flex-direction: column;
+  justify-content: space-between;
+  height: 20px;
+}
+
+.toggle span {
+  display: block;
+  width: 28px;
+  height: 3px;
+  background-color: rgb(243, 229, 255);
+  border-radius: 3px;
+}
+
+/* Responsive ukuran tablet */
+
+@media screen and (min-width: 768px) {
+  nav ul {
+    width: 50%;
+  }
+}
+
+/* ukuran mobile */
+@media screen and (max-width: 576px) {
+  .toggle {
+    display: flex;
+  }
+  nav ul {
+    display: none;
+  }
+}
